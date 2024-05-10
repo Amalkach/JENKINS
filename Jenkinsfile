@@ -46,7 +46,7 @@ pipeline {
  emailext attachLog: true,
  subject: "Failed security scan",
  body: "Failed security scan",
- to: 'amalkachappilly07@gmail.com"'
+ to: "amalkachappilly07@gmail.com"
  }
  }
  }
@@ -77,7 +77,7 @@ pipeline {
  emailext attachLog: true,
  subject: "Pipeline failed",
  body: "The pipeline has failed. Please take necessary actions.",
- to: "amalkachappilly07@gmail.com""
+ to: "amalkachappilly07@gmail.com"
  }
  }
 }
