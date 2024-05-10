@@ -52,17 +52,17 @@ pipeline {
  }
  stage("Deploy to Staging") {
  steps {
- echo "Deploying to Staging environment using Kubernetes"
+ echo "Staging environment Deploying using Kubernetes"
  }
  }
  stage("Integration Tests on Staging") {
  steps {
- echo "Running integration tests on Staging environment"
+ echo "integration tests Running on Staging environment"
  }
  }
  stage("Deploy to Production") {
  steps {
- echo "Deploying to Production environment using Kubernetes"
+ echo "Deploying Production Deployment with Kubernetes"
  }
  }
  }
