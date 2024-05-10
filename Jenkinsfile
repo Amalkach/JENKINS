@@ -6,7 +6,7 @@ pipeline {
  echo "Gradle Buliding"
  }
  }
- stage("Unit and Integration Tests") {
+ stage("Unit and Integration Tests") { 
  steps {
  echo "Test Running"
  echo "Integration running"
@@ -20,7 +20,7 @@ pipeline {
  }
  failure {
  emailext attachLog: true,
- subject: "Failed both the tests",
+ subject: "Fail both the tests",
  body: "Failed both the tests",
  to: "amalkachappilly07@gmail.com"
  }
